@@ -40,18 +40,23 @@ body {
 .bar:nth-child(5) {
     animation-delay: 0.8s;
 }
+
 .bar:nth-child(6) {
     animation-delay: 1.0s;
 }
+
 .bar:nth-child(7) {
     animation-delay: 1.2s;
 }
+
 .bar:nth-child(8) {
     animation-delay: 1.4s;
 }
+
 .bar:nth-child(9) {
     animation-delay: 1.6s;
 }
+
 @keyframes beat {
 
     0% {
@@ -64,5 +69,35 @@ body {
 
     100% {
         height: 20px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .bar:nth-child(6) {
+        display: none;
+    }
+
+    .bar:nth-child(7) {
+        display: none;
+    }
+
+    .bar:nth-child(8) {
+        display: none;
+    }
+
+    .bar:nth-child(9) {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width :601px) and (max-width : 1000px) {
+
+    .bar:nth-child(8) {
+        display: none;
+    }
+
+    .bar:nth-child(9) {
+        display: none;
     }
 }
